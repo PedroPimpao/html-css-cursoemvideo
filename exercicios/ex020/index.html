@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo-classes</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="d1">01 classe</div>
+    <div id="d2">02 classe</div>
+    <div id="d3">03 classe</div>
+    <div id="d4" onmouseenter="alterar()" onmouseout="voltarNormal()">04 classe</div>
+   <script>
+        function alterar(){
+            var elemento=document.getElementById('d4')
+            elemento.innerHTML=`PAAASOU O MOUSE`
+            elemento.style.backgroundColor=`lightgreen`
+        }
+        function voltarNormal(){
+            var elemento=document.getElementById('d4')
+            elemento.innerHTML=`04 classe`
+            elemento.style.backgroundColor=`lightgrey`
+        }
+   </script>
+</body>
+</html>

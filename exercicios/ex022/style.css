@@ -1,0 +1,12 @@
+h1{
+    width: 300px;
+    background-color: lightgray;
+    /*
+    border-width: 7.5px;
+    border-style: solid;
+    border-color: darkslategrey;
+    */
+    border: 10.5px solid darkslategrey;
+    padding: 10px;
+    margin: auto;
+}
