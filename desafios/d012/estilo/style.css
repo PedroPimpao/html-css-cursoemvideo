@@ -1,5 +1,76 @@
+@charset "UTF-8";
+:root{
+    --fonte1: "Passion One", serif;
+    --fonte2: "Sriracha", serif;
+    --fontePadrao: Verdana, Geneva, Tahoma, sans-serif;
+}
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+body{
+    min-height: 100vh;
+    /* min-width: 100vw; */
+    background-color: darkgray;
+    font-family: var(--fontePadrao);
+}
+header{
+    background-color: #000;
+    color: #FFF;
+    padding: 3rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+header a{
+    text-decoration: none;
+    color: #FFF;
+    &:hover{
+        text-decoration: underline;
+    }
+}
+header h1{
+    font-variant: small-caps;
+    font-size: 10vw;
+    font-family: var(--fonte1);
+}
+section{
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+    line-height: 2em;
+    padding-left: 30px;
+    padding-right: 30px;
+    font-family: var(--fonte2);
+    font-size: 3.5vw;
+}
+section > p{
+    padding-bottom: 2em;
+}
+section.normal{
+    background-color: #FFF;
+    color: black;
+}
+section.imagem{
+    background-color: rgb(49, 49, 49);
+    color: #FFF;
+}
+section.imagem > p{
+    display: inline-block;
+    background-color: #00000052;
+    padding: 5px;
+    border-radius: 6px;
+}
+#img01{
+    background-image: url('../imagens/background001.jpg');
+    background-position: center center;
+    background-size: cover;
+}
+#img02{
+    background-image: url('../imagens/background002.jpg');
+    background-position: center center;
+    background-size: cover;
+}
+.imagem{
+    background-attachment: fixed;
 }
